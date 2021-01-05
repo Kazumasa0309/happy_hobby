@@ -4,4 +4,5 @@ class CommunitiesController < ApplicationController
 
   def new
     @community = Community.new
+  end
 end
