@@ -5,4 +5,8 @@ class CommunitiesController < ApplicationController
   def new
     @community = Community.new
   end
+
+  def create
+    binding.pry
+  end
 end
