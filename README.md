@@ -19,8 +19,8 @@
 | Column   | Type      | Options                        |
 | -------- | --------- | ------------------------------ |
 | name     | string    | null: false                    |
-| profile  | text      | null: false                    |
 | category | string    | null: false                    |
+| profile  | text      | null: false                    |
 
 ### Association
 
