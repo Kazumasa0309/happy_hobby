@@ -32,8 +32,8 @@
 
 | Column    | Type       | Options                        |
 | --------- | ---------- | ------------------------------ |
-| user      | references | null: false, foreign_key: true |
 | community | references | null: false, foreign_key: true |
+| user      | references | null: false, foreign_key: true |
 
 ### Association
 
