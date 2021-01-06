@@ -7,5 +7,5 @@ class User < ApplicationRecord
   validates :nickname, presence: true
 
   has_many :users_communities
-  has_many :communities, through: :communities_users
+  has_many :communities, through: :users_communities
 end
