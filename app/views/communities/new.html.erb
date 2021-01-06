@@ -36,6 +36,7 @@
         <%= f.submit class: 'chat-room-form__action-btn'%>
       </div>
     </div>
+    <%# 作成者のユーザーIDをコントローラーに渡す %>
     <input name="community[user_ids][]" type="hidden" value=<%= current_user.id %>>
   <% end %>
 </div>
