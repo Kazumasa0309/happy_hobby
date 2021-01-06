@@ -19,8 +19,8 @@
 | Column   | Type      | Options                        |
 | -------- | --------- | ------------------------------ |
 | name     | string    | null: false                    |
-| profile  | text      | null: false                    |
 | category | string    | null: false                    |
+| profile  | text      | null: false                    |
 
 ### Association
 
@@ -32,8 +32,8 @@
 
 | Column    | Type       | Options                        |
 | --------- | ---------- | ------------------------------ |
-| user      | references | null: false, foreign_key: true |
 | community | references | null: false, foreign_key: true |
+| user      | references | null: false, foreign_key: true |
 
 ### Association
 

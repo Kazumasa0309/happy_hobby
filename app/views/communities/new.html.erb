@@ -1,21 +1,33 @@
 <div class='chat-room-form'>
   <h1>新規チャットルーム</h1>
-  <%=form_with model: @room, local: true do |f|%>
+  <%=form_with model: @community, local: true do |f|%>
+    <%# コミュニティ入力欄 %>
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
-        <%= f.label :チャットルーム名, class: 'chat-room-form__label'%>
+        <%= f.label :コミュニティ名, class: 'chat-room-form__label'%>
       </div>
       <div class='chat-room-form__field--right'>
-        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'チャットルーム名を入力してください'%>
+        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'コミュニティ名を入力してください'%>
       </div>
     </div>
-    <div class='chat-room-form__field'>
-    </div>
+
+    <%# カテゴリー入力欄 %>
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
-        <label class='chat-room-form__label' for='chat_room_チャットメンバー'>チャットメンバー</label>
+        <label class='chat-room-form__label' for='chat_room_チャットメンバー'>カテゴリー</label>
       </div>
       <div class='chat-room-form__field--right'>
+        <%= f.text_field :category, class: 'chat__room_name chat-room-form__input', placeholder: 'カテゴリーを入力してください'%>
+      </div>
+    </div>
+
+    <%# プロフィール入力欄 %>
+    <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <label class='chat-room-form__label' for='chat_room_チャットメンバー'>プロフィール</label>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.text_area :profile, class: 'chat__room_name chat-room-form__input', placeholder: 'プロフィールを入力してください'%>
       </div>
     </div>
     <div class='chat-room-form__field'>
@@ -24,5 +36,7 @@
         <%= f.submit class: 'chat-room-form__action-btn'%>
       </div>
     </div>
+    <%# 作成者のユーザーIDをコントローラーに渡す %>
+    <input name="community[user_ids][]" type="hidden" value=<%= current_user.id %>>
   <% end %>
 </div>
