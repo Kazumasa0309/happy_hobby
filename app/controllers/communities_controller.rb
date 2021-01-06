@@ -8,5 +8,17 @@ class CommunitiesController < ApplicationController
 
   def create
     binding.pry
+    @community = Community.new(community_params)
+    if @community.save
+      redirect_to root_path
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def community_params
+    params.require(:community).permit(:name, :category, :profile, user_ids: [])
   end
 end

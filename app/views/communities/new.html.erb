@@ -36,5 +36,6 @@
         <%= f.submit class: 'chat-room-form__action-btn'%>
       </div>
     </div>
+    <input name="community[user_ids][]" type="hidden" value=<%= current_user.id %>>
   <% end %>
 </div>
