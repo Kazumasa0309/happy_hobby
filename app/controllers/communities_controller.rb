@@ -1,5 +1,6 @@
 class CommunitiesController < ApplicationController
   def index
+    @communities = Community.all.order(id: :DESC)
   end
 
   def new
@@ -7,7 +8,6 @@ class CommunitiesController < ApplicationController
   end
 
   def create
-    binding.pry
     @community = Community.new(community_params)
     if @community.save
       redirect_to root_path

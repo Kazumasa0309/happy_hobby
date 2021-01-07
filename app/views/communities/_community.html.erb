@@ -1,0 +1,16 @@
+<li class='list'>
+<%# community_path(community.id) %>
+  <%= link_to "#" do %>
+    <div class='item-img-content'>
+      <%= image_tag community.image, class: "item-img" %>
+    </div>
+    <div class='item-info'>
+      <h3 class='item-name'>
+        <%= community.name %>
+      </h3>
+      <div class='community-category'>
+        <span>カテゴリー：<%= community.category %></span>
+      </div>
+    </div>
+  <% end %>
+</li>
