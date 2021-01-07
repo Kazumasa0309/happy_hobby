@@ -29,3 +29,13 @@
 	display: inline-block;
 	padding: 10px;
 }
+
+/* コミュニティ一覧 */
+.item-img-content {
+  position: relative;
+}
+
+.item-img {
+  width: 33vh;
+  height: 33vh;
+}

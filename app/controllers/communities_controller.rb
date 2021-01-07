@@ -1,5 +1,6 @@
 class CommunitiesController < ApplicationController
   def index
+    @communities = Community.all.order(id: :DESC)
   end
 
   def new
@@ -7,7 +8,6 @@ class CommunitiesController < ApplicationController
   end
 
   def create
-    binding.pry
     @community = Community.new(community_params)
     if @community.save
       redirect_to root_path
@@ -19,6 +19,6 @@ class CommunitiesController < ApplicationController
   private
 
   def community_params
-    params.require(:community).permit(:name, :category, :profile, user_ids: [])
+    params.require(:community).permit(:name, :category, :profile, :image, user_ids: [])
   end
 end
