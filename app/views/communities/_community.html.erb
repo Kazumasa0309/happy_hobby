@@ -4,13 +4,17 @@
     <div class='item-img-content'>
       <%= image_tag community.image, class: "item-img" %>
     </div>
+  <% end %>
     <div class='item-info'>
       <h3 class='item-name'>
-        <%= community.name %>
+        コミュニティ名：<%= community.name %>
       </h3>
       <div class='community-category'>
         <span>カテゴリー：<%= community.category %></span>
       </div>
     </div>
-  <% end %>
+    <ul class='community-list'>
+        <li><%= link_to '入室', '#', class: "community-enter" %></li>
+        <li><%= link_to '詳細', '#', method: :delete, class: "community-show" %></li>
+    </ul>
 </li>
