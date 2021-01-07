@@ -8,4 +8,5 @@ class User < ApplicationRecord
 
   has_many :users_communities
   has_many :communities, through: :users_communities
+  has_many :messages
 end
