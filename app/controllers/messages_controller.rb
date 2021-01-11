@@ -1,4 +1,6 @@
 class MessagesController < ApplicationController
+  before_action :move_to_root, only: [:index]
+
   def index
     @message = Message.new
     @community = Community.find(params[:community_id])
@@ -20,5 +22,12 @@ class MessagesController < ApplicationController
 
   def message_params
     params.require(:message).permit(:content).merge(user_id: current_user.id)
+  end
+
+  def move_to_root
+    @Users_community = UsersCommunity.where(community_id: params[:community_id], user_id: current_user.id)
+    if @Users_community.blank?
+      redirect_to root_path
+    end
   end
 end
