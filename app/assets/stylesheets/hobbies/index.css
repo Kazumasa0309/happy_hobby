@@ -24,8 +24,8 @@
 .card {
   width: 450px;
   height: 210px;
-  background: white
-  
+  background: darkgrey;
+  display: flex;
 }
 
 .card + .card {
@@ -34,4 +34,13 @@
 
 #cards.move {
   transform: translate(-1000px, 0);
+}
+
+.left-side {
+  width: 160px;
+}
+
+.right-side {
+  width: 260px;
+  text-align: center;
 }
