@@ -1,4 +1,4 @@
-.shindan-wrap {
+.shindan_wrap {
   width: 100vw;
   height: 100vh;
 }
@@ -15,20 +15,19 @@
   text-align: center;
 }
 
-.answerbox {
+.answer_box {
   display: flex;
   justify-content: space-around;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.q01 {
+.q00 {
+}
+
+.img {
   width: 25vw;
   height: 50vh;
-}
-.img {
-  width: 100%;
-  height: 100%;
   border: 1px solid black;
 }
 

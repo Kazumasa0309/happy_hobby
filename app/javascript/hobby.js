@@ -7,12 +7,16 @@ function move() {
 
   answer_left.addEventListener('click', function() {
     question.innerHTML = "質問1"
+    answer_left.setAttribute('class', 'ans01')
+    answer_right.setAttribute('class', 'ans01')
     img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
     img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
   });
   
   answer_right.addEventListener('click', function() {
     question.innerHTML = "質問2"
+    answer_left.setAttribute('class', 'ans02')
+    answer_right.setAttribute('class', 'ans02')
     img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
     img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
   });
