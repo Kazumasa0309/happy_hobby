@@ -5,8 +5,6 @@ function move() {
   let img01 = document.getElementById('img01');
   let img02 = document.getElementById('img02');
 
-  
-
   answer_left.addEventListener('click', function() {
     // 質問0にて左を選択
     if (answer_left.getAttribute('class') == 'ans0001') {
@@ -112,7 +110,5 @@ function move() {
       img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
     }
   });
-
 }
-
-window.addEventListener("load", move);
+window.addEventListener("click", move);
