@@ -8,7 +8,9 @@ function move() {
   });
 
   retry.addEventListener('click', function() {
-    cards.className = '';
+    cards.className = 'move';
+    const test = document.querySelector('#cards.move');
+    console.log(test)
   });
 };
 window.addEventListener("load", move);

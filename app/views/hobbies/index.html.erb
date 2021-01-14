@@ -1,24 +1,26 @@
-<div class="body">
-  <div class="stage">
-    <div id="cards">
-      <%# 1枚目 %>
-      <div class="card" id="start">
-        <div class='left-side'>
-          <%= image_tag "guitar.png", width:160, height:210 %>
-        </div>
-        <div class="right-side">
-          form
-        </div>
-      </div>
-      <%# 2枚目 %>
-      <div class="card" id="retry">
-        <div class='left-side'>
-          <%= image_tag "guitar.png", width:160, height:210 %>
-        </div>
-        <div class="right-side">
-          result
-        </div>
-      </div>
-    </div>
+<div class="shindan-wrap" style="background-color: palegreen">
+  <div class="question">
+    あなたはアウトドア派？ インドア派？
   </div>
+
+  <ul class="answerbox">
+    <li class="q01" id="answer-left">
+      <div class="img" id="img01">
+        <%= image_tag "guitar.png", width:160, height:210 %>
+      </div>
+      <div class="txtbox" id="txtbox01">
+        <p id="txt01_1">txt01_1</p>
+        <p id="txt01_2">txt01_2</p>
+      </div>
+    </li>
+    <li class="q01" id="answer-left">
+      <div class="img" id="img02">
+        <%= image_tag "guitar.png", width:160, height:210 %>
+      </div>
+      <div class="txtbox" id="txtbox01">
+        <p id="txt02_1">txt02_1</p>
+        <p id="txt02_2">txt02_2</p>
+      </div>
+    </li>
+  </ul>
 </div>
