@@ -4,6 +4,12 @@ function move() {
   let img02 = document.getElementById('img02');
 
   img01.addEventListener('click', function() {
+    question.innerHTML = "質問1"
+    img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
+    img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
+  });
+  
+  img02.addEventListener('click', function() {
     question.innerHTML = "質問2"
     img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
     img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
