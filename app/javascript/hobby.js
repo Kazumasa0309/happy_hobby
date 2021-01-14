@@ -1,16 +1,14 @@
 function move() {
-  var cards = document.getElementById('cards');
-  var start = document.getElementById('start');
-  var retry = document.getElementById('retry');
+  let question = document.getElementById('question');
+  let img01 = document.getElementById('img01');
+  let img02 = document.getElementById('img02');
 
-  start.addEventListener('click', function() {
-    cards.className = 'move';
+  img01.addEventListener('click', function() {
+    question.innerHTML = "質問2"
+    img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
+    img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
   });
 
-  retry.addEventListener('click', function() {
-    cards.className = 'move';
-    const test = document.querySelector('#cards.move');
-    console.log(test)
-  });
+
 };
 window.addEventListener("load", move);
