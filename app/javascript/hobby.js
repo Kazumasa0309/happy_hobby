@@ -111,4 +111,4 @@ function move() {
     }
   });
 }
-window.addEventListener("click", move);
+window.addEventListener('load', move);
