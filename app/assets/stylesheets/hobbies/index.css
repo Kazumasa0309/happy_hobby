@@ -1,4 +1,4 @@
-.shindan_wrap {
+#shindan_wrap {
   width: 100vw;
   height: 100vh;
   padding-top: 10vh;
@@ -10,10 +10,10 @@
   margin: auto;
   margin-bottom: 10vh;
   padding: 5vh;
-  border: 3px solid #000000;
-  font-size: 2.0rem;
+  font-size: 3vw;
   font-weight: bold;
   background-color: #ffffff;
+  border: 3px solid #000000;
   text-align: center;
 }
 
@@ -40,6 +40,8 @@
 }
 
 .txtbox {
+  width: 25vw;
+  height: 15vh;
   background-color: white;
   text-align: center;
   border-left: 1px solid black;
@@ -47,16 +49,25 @@
   border-bottom: 1px solid black;
 }
 
+/* 回答文 */
+#txt01_1{
+  font-size: 1.5vw;
+}
+
+#txt02_1{
+  font-size: 1.5vw;
+}
+
 #txt01_2{
   width: 100%;
   height: 100%;
-  font-size: x-large;
+  font-size: 3vw;
   font-weight: 700;
 }
 
 #txt02_2{
   width: 100%;
   height: 100%;
-  font-size: x-large;
+  font-size: 3vw;
   font-weight: 700;
 }
