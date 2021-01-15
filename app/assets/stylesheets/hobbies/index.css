@@ -1,0 +1,73 @@
+#shindan_wrap {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+#question {
+  width: 70vw;
+  height: 20vh;
+  margin: auto;
+  margin-bottom: 10vh;
+  padding: 5vh;
+  font-size: 3vw;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 3px solid #000000;
+  text-align: center;
+}
+
+.answer_box {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.q00 {
+}
+
+.img {
+  width: 25vw;
+  height: 40vh;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.txtbox {
+  width: 25vw;
+  height: 15vh;
+  background-color: white;
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* 回答文 */
+#txt01_1{
+  font-size: 1.5vw;
+}
+
+#txt02_1{
+  font-size: 1.5vw;
+}
+
+#txt01_2{
+  width: 100%;
+  height: 100%;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+#txt02_2{
+  width: 100%;
+  height: 100%;
+  font-size: 3vw;
+  font-weight: 700;
+}
