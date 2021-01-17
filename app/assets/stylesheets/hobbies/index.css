@@ -1,3 +1,4 @@
+/* 診断画面 */
 #shindan_wrap {
   width: 100vw;
   height: 100vh;
@@ -49,7 +50,6 @@
   border-bottom: 1px solid black;
 }
 
-/* 回答文 */
 #txt01_1{
   font-size: 1.5vw;
 }
@@ -70,4 +70,10 @@
   height: 100%;
   font-size: 3vw;
   font-weight: 700;
+}
+
+/* 結果画面 */
+#kekka_wrap {
+  width: 100vw;
+  height: 100vh;
 }
