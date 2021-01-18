@@ -9,6 +9,15 @@ function move() {
   let txt01_2 = document.getElementById('txt01_2');
   let txt02_1 = document.getElementById('txt02_1');
   let txt02_2 = document.getElementById('txt02_2');
+  let kekka_wrap = document.getElementById('kekka_wrap')
+  let kekka07 = document.getElementById('kekka07')
+  let kekka08 = document.getElementById('kekka08')
+  let kekka09 = document.getElementById('kekka09')
+  let kekka10 = document.getElementById('kekka10')
+  let kekka11 = document.getElementById('kekka11')
+  let kekka12 = document.getElementById('kekka12')
+  let kekka13 = document.getElementById('kekka13')
+  let kekka14 = document.getElementById('kekka14')
 
   answer_left.addEventListener('click', function() {
     // 質問1
@@ -47,34 +56,50 @@ function move() {
       txt01_2.innerHTML = "けっこう好き"
       txt02_1.innerHTML = "嫌いではないが"
       txt02_2.innerHTML = "そうでもない"
-    // 質問3にて左を選択
+    // 結果7
     } else if (answer_left.getAttribute('class') == 'ans0301') {
-      question.innerHTML = "結果7"
-      answer_left.setAttribute('class', 'ans0701')
-      answer_right.setAttribute('class', 'ans0702')
-      img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-    // 質問4にて左を選択
+      shindan_wrap.setAttribute('style', 'display: none')
+      kekka_wrap.setAttribute('style', '')
+      kekka08.setAttribute('style', 'display: none')
+      kekka09.setAttribute('style', 'display: none')
+      kekka10.setAttribute('style', 'display: none')
+      kekka11.setAttribute('style', 'display: none')
+      kekka12.setAttribute('style', 'display: none')
+      kekka13.setAttribute('style', 'display: none')
+      kekka14.setAttribute('style', 'display: none')
+    // 結果9
     } else if (answer_left.getAttribute('class') == 'ans0401') {
-      question.innerHTML = "結果9"
-      answer_left.setAttribute('class', 'ans0901')
-      answer_right.setAttribute('class', 'ans0902')
-      img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-    // 質問5にて左を選択
+      shindan_wrap.setAttribute('style', 'display: none')
+      kekka_wrap.setAttribute('style', '')
+      kekka07.setAttribute('style', 'display: none')
+      kekka08.setAttribute('style', 'display: none')
+      kekka10.setAttribute('style', 'display: none')
+      kekka11.setAttribute('style', 'display: none')
+      kekka12.setAttribute('style', 'display: none')
+      kekka13.setAttribute('style', 'display: none')
+      kekka14.setAttribute('style', 'display: none')
+    // 結果11
     } else if (answer_left.getAttribute('class') == 'ans0501') {
-      question.innerHTML = "結果11"
-      answer_left.setAttribute('class', 'ans1101')
-      answer_right.setAttribute('class', 'ans1102')
-      img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-      // 質問6にて左を選択
+      shindan_wrap.setAttribute('style', 'display: none')
+      kekka_wrap.setAttribute('style', '')
+      kekka07.setAttribute('style', 'display: none')
+      kekka08.setAttribute('style', 'display: none')
+      kekka09.setAttribute('style', 'display: none')
+      kekka10.setAttribute('style', 'display: none')
+      kekka12.setAttribute('style', 'display: none')
+      kekka13.setAttribute('style', 'display: none')
+      kekka14.setAttribute('style', 'display: none')
+    // 結果13
     } else if (answer_left.getAttribute('class') == 'ans0601') {
-      question.innerHTML = "結果13"
-      answer_left.setAttribute('class', 'ans1301')
-      answer_right.setAttribute('class', 'ans1302')
-      img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
+      shindan_wrap.setAttribute('style', 'display: none')
+      kekka_wrap.setAttribute('style', '')
+      kekka07.setAttribute('style', 'display: none')
+      kekka08.setAttribute('style', 'display: none')
+      kekka09.setAttribute('style', 'display: none')
+      kekka10.setAttribute('style', 'display: none')
+      kekka11.setAttribute('style', 'display: none')
+      kekka12.setAttribute('style', 'display: none')
+      kekka14.setAttribute('style', 'display: none')
     }
   });
 
@@ -115,34 +140,50 @@ function move() {
       txt01_2.innerHTML = "準備命"
       txt02_1.innerHTML = "楽観的"
       txt02_2.innerHTML = "あまり気にせず"
-    // 質問3にて右を選択
+    // 結果8
     } else if (answer_right.getAttribute('class') == 'ans0302') {
-      question.innerHTML = "結果8"
-      answer_left.setAttribute('class', 'ans0801')
-      answer_right.setAttribute('class', 'ans0802')
-      img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-    // 質問4にて右を選択
+      shindan_wrap.setAttribute('style', 'display: none')
+      kekka_wrap.setAttribute('style', '')
+      kekka07.setAttribute('style', 'display: none')
+      kekka09.setAttribute('style', 'display: none')
+      kekka10.setAttribute('style', 'display: none')
+      kekka11.setAttribute('style', 'display: none')
+      kekka12.setAttribute('style', 'display: none')
+      kekka13.setAttribute('style', 'display: none')
+      kekka14.setAttribute('style', 'display: none')
+    // 結果10
     } else if (answer_right.getAttribute('class') == 'ans0402') {
-      question.innerHTML = "結果10"
-      answer_left.setAttribute('class', 'ans1001')
-      answer_right.setAttribute('class', 'ans1002')
-      img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-    // 質問5にて右を選択
+      shindan_wrap.setAttribute('style', 'display: none')
+      kekka_wrap.setAttribute('style', '')
+      kekka07.setAttribute('style', 'display: none')
+      kekka08.setAttribute('style', 'display: none')
+      kekka09.setAttribute('style', 'display: none')
+      kekka11.setAttribute('style', 'display: none')
+      kekka12.setAttribute('style', 'display: none')
+      kekka13.setAttribute('style', 'display: none')
+      kekka14.setAttribute('style', 'display: none')
+    // 結果12
     } else if (answer_right.getAttribute('class') == 'ans0502') {
-      question.innerHTML = "結果12"
-      answer_left.setAttribute('class', 'ans1201')
-      answer_right.setAttribute('class', 'ans1202')
-      img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-    // 質問6にて右を選択
+      shindan_wrap.setAttribute('style', 'display: none')
+      kekka_wrap.setAttribute('style', '')
+      kekka07.setAttribute('style', 'display: none')
+      kekka08.setAttribute('style', 'display: none')
+      kekka09.setAttribute('style', 'display: none')
+      kekka10.setAttribute('style', 'display: none')
+      kekka11.setAttribute('style', 'display: none')
+      kekka13.setAttribute('style', 'display: none')
+      kekka14.setAttribute('style', 'display: none')
+    // 結果14
     } else if (answer_right.getAttribute('class') == 'ans0602') {
-      question.innerHTML = "結果14"
-      answer_left.setAttribute('class', 'ans1401')
-      answer_right.setAttribute('class', 'ans1402')
-      img01.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/guitar_stand.png', class='image'>";
+      shindan_wrap.setAttribute('style', 'display: none')
+      kekka_wrap.setAttribute('style', '')
+      kekka07.setAttribute('style', 'display: none')
+      kekka08.setAttribute('style', 'display: none')
+      kekka09.setAttribute('style', 'display: none')
+      kekka10.setAttribute('style', 'display: none')
+      kekka11.setAttribute('style', 'display: none')
+      kekka12.setAttribute('style', 'display: none')
+      kekka13.setAttribute('style', 'display: none')
     }
   });
 }
