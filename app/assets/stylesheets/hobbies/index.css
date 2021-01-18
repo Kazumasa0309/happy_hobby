@@ -5,6 +5,16 @@
   padding-top: 10vh;
 }
 
+.root {
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
 #question {
   width: 70vw;
   height: 20vh;
