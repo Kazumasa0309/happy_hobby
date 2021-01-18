@@ -5,6 +5,16 @@
   padding-top: 10vh;
 }
 
+.root {
+  position: absolute;
+  top: 3vh;
+  left: 3vw;
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
 #question {
   width: 70vw;
   height: 20vh;
@@ -76,4 +86,61 @@
 #kekka_wrap {
   width: 100vw;
   height: 100vh;
+}
+
+.kekkabox {
+  width: 100vw;
+  height: 100vh;
+}
+
+.kekka_ttl {
+  width: 40vw;
+  height: 15vh;
+  margin: 0 auto;
+  padding: 2vh;
+  border: 3px solid #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+  font-size: 3vw;
+  text-align: center;
+}
+
+#kekka_ossm {
+  font-size: 1.5vw;
+}
+
+#kekka_hobby {
+  font-weight: bold;
+}
+
+.kekka_inq {
+  margin-top: 3vh;
+  text-align: center;
+}
+
+.kekka_listbox {
+  width: 100vw;
+  height: 75vh;
+}
+
+.kekka_list {
+  background-color: white;
+  width: 70vw;
+  height: 30vh;
+  border: solid 2px black;
+  margin-left: 15vw;
+  margin-top: 3vh;
+  display: flex;
+}
+
+.kekka_img {
+  width: 30vh;
+  height: 29vh;
+}
+
+.kekka_text {
+  padding-top: 3vh;
+  font-size: 1.5vw;
+  font-weight: bold;
+  line-height: 200%
 }
