@@ -28,23 +28,68 @@
 
 <%# 結果画面 %>
 <div id="kekka_wrap">
-  <div id="ans01" class="kekka01">
+  <%# 結果07 %>
+  <div id="ans07" class="kekka07" style="background-color: #f5d784">
     <div class="kekkabox">
       <div class="kekka_ttl">
-          おすすめの趣味は…<br class='sp_cont'><span>楽器</span>
+        <div id="kekka">
+          <span id="kekka_ossm">おすすめの趣味は…</span>
+          <span id="kekka_hobby">楽器</span>
+        </div>
       </div>
       <div class="kekka_inq">
         オススメの楽器はこちら！
       </div>
       
-      <ul class="kekkalistbox">
-        <li id="kekka_img01">
+      <ul class="kekka_listbox">
+        <li class="kekka_list">
+          <%= image_tag "img_0701_guitar.png", class:"kekka_img"%>
+          <div class="kekka_text">
+            アコースティックギターを初めてみませんか？<br>
+            まずは簡単な曲から練習！<br>
+            自分の好きな曲を弾けるようになりましょう！
+          </div>
         </li>
-        <li id="kekka_img02">
+        <li class="kekka_list">
+          <%= image_tag "img_0702_piano.png", class:"kekka_img"%>
+          <div class="kekka_text">
+            電子ピアノもおすすめです！<br>
+            アコギはちょっと違う、手入れが面倒な人はこっち！<br>
+            最終目標はストリートピアノ演奏？
+          </div>
         </li>
-        <li id="kekka_img03">
+      </ul>
+    </div>
+  </div>
+  <%# 結果08 %>
+  <div id="ans07" class="kekka07" style="background-color: #d2f9fa">
+    <div class="kekkabox">
+      <div class="kekka_ttl">
+        <div id="kekka">
+          <span id="kekka_ossm">おすすめの趣味は…</span>
+          <span id="kekka_hobby">ゲーム</span>
+        </div>
+      </div>
+      <div class="kekka_inq">
+        オススメのゲームジャンルはこちら！
+      </div>
+      
+      <ul class="kekka_listbox">
+        <li class="kekka_list">
+          <%= image_tag "img_0801_boardgame.png", class:"kekka_img"%>
+          <div class="kekka_text">
+            仲間を集めてボードゲームおすすめです！<br>
+            簡単で盛り上がるものや<br>
+            深い戦術や熱い読み合いができるも多種多様です！
+          </div>
         </li>
-        <li id="kekka_img04">
+        <li class="kekka_list">
+          <%= image_tag "img_0802_videogame.png", class:"kekka_img"%>
+          <div class="kekka_text">
+            TVゲームもおすすめです！<br>
+            マイペースで遊ぶことができます！<br>
+            仲間と協力して遊ぶものも全然アリ！
+          </div>
         </li>
       </ul>
     </div>
