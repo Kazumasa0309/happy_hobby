@@ -15,11 +15,15 @@
   border-top: solid 3px black;
   border-bottom: solid 3px black;
   padding-left: 3vh;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 
+.step-lists {
+}
+
 .step {
-	/* border-bottom: 3px solid #000000; */
+	border-bottom: 2px solid black;
 }
 .step span {
 	color: #ffffff;
@@ -31,6 +35,10 @@
 }
 
 /* コミュニティ一覧 */
+.community-contents{
+  margin-top: 5px;
+}
+
 .item-img-content {
   position: relative;
 }
