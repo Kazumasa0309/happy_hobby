@@ -2,7 +2,9 @@
   <h1 class='title'>Happy Hobby</h1>
   <div class='menu'>
     <ul class='lists-left'>
-      <li><%= link_to '趣味診断', hobbies_path, class: "hobby" %></li>
+      <li>
+        <%= button_to "趣味診断", {controller: 'hobbies', action: 'index'}, {method: :get, class: "hobbybutton"} %>
+      </li>
     </ul>
     <ul class='lists-right'>
       <% if user_signed_in? %>

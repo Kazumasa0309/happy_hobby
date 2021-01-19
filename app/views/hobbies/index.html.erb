@@ -1,6 +1,6 @@
 <%# 診断画面 %>
 <div id="shindan_wrap" style="background-color: #CCFFCC">
-  <%= link_to 'Happy Hobby', root_path, class: "root" %>
+  <%= button_to "TOP", {controller: 'communities', action: 'index'}, {method: :get, class: "rootbutton"} %>
   <div id="question">
     あなたはインドア派？アウトドア派？
   </div>

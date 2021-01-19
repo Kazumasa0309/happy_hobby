@@ -30,6 +30,21 @@
   min-width: 200px;
 }
 
+.hobbybutton {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: black;
+  border: solid 2px black;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+.hobbybutton:hover {
+  background: black;
+  color: white;
+}
+
 .lists-right {
   display: flex;
   list-style: none;
