@@ -19,6 +19,22 @@ function move() {
   let kekka13 = document.getElementById('kekka13')
   let kekka14 = document.getElementById('kekka14')
 
+  let img0001 = document.getElementById('img0001')
+  let img0101 = document.getElementById('img0101')
+  let img0201 = document.getElementById('img0201')
+  let img0301 = document.getElementById('img0301')
+  let img0401 = document.getElementById('img0401')
+  let img0501 = document.getElementById('img0501')
+  let img0601 = document.getElementById('img0601')
+
+  let img0002 = document.getElementById('img0002')
+  let img0102 = document.getElementById('img0102')
+  let img0202 = document.getElementById('img0202')
+  let img0302 = document.getElementById('img0302')
+  let img0402 = document.getElementById('img0402')
+  let img0502 = document.getElementById('img0502')
+  let img0602 = document.getElementById('img0602')
+
   answer_left.addEventListener('click', function() {
     // 質問1
     if (answer_left.getAttribute('class') == 'ans0001') {
@@ -26,8 +42,12 @@ function move() {
       question.innerHTML = "ものを使う方が好き？作る方が好き？"
       answer_left.setAttribute('class', 'ans0101')
       answer_right.setAttribute('class', 'ans0102')
-      img01.innerHTML = "<img src ='assets/img_0101_sword.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/img_0102_diy.png', class='image'>";
+      // img01.innerHTML = "<img src ='assets/img_0101_sword.png', class='image'>";
+      // img02.innerHTML = "<img src ='assets/img_0102_diy.png', class='image'>";
+      img0001.setAttribute('style', 'display: none')
+      img0101.setAttribute('style', '')
+      img0002.setAttribute('style', 'display: none')
+      img0102.setAttribute('style', '')
       txt01_1.innerHTML = "いいもの見つけたい"
       txt01_2.innerHTML = "使う派"
       txt02_1.innerHTML = "いいもの作りたい"
@@ -38,8 +58,12 @@ function move() {
       question.innerHTML = "与えたい人ですか？与えられたい人ですか？"
       answer_left.setAttribute('class', 'ans0301')
       answer_right.setAttribute('class', 'ans0302')
-      img01.innerHTML = "<img src ='assets/img_0301_hikigatari.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/img_0302_audience.png', class='image'>";
+      // img01.innerHTML = "<img src ='assets/img_0301_hikigatari.png', class='image'>";
+      // img02.innerHTML = "<img src ='assets/img_0302_audience.png', class='image'>";
+      img0101.setAttribute('style', 'display: none')
+      img0301.setAttribute('style', '')
+      img0102.setAttribute('style', 'display: none')
+      img0302.setAttribute('style', '')
       txt01_1.innerHTML = "みんなが幸せだと自分も幸せ"
       txt01_2.innerHTML = "与えたい人"
       txt02_1.innerHTML = "自分の中の穴を埋めて欲しい！"
@@ -50,8 +74,12 @@ function move() {
       question.innerHTML = "体を動かすのが好き？"
       answer_left.setAttribute('class', 'ans0501')
       answer_right.setAttribute('class', 'ans0502')
-      img01.innerHTML = "<img src ='assets/img_0501_run.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/img_0502_smartphone.png', class='image'>";
+      // img01.innerHTML = "<img src ='assets/img_0501_run.png', class='image'>";
+      // img02.innerHTML = "<img src ='assets/img_0502_smartphone.png', class='image'>";
+      img0201.setAttribute('style', 'display: none')
+      img0501.setAttribute('style', '')
+      img0202.setAttribute('style', 'display: none')
+      img0502.setAttribute('style', '')
       txt01_1.innerHTML = "スポーティなタイプ"
       txt01_2.innerHTML = "けっこう好き"
       txt02_1.innerHTML = "嫌いではないが"
@@ -110,8 +138,12 @@ function move() {
       question.innerHTML = "花より団子？"
       answer_left.setAttribute('class', 'ans0201')
       answer_right.setAttribute('class', 'ans0202')
-      img01.innerHTML = "<img src ='assets/img_0201_sakura.jpg', class='image'>";
-      img02.innerHTML = "<img src ='assets/img_0202_dango.png', class='image'>";
+      // img01.innerHTML = "<img src ='assets/img_0201_sakura.jpg', class='image'>";
+      // img02.innerHTML = "<img src ='assets/img_0202_dango.png', class='image'>";
+      img0001.setAttribute('style', 'display: none')
+      img0201.setAttribute('style', '')
+      img0002.setAttribute('style', 'display: none')
+      img0202.setAttribute('style', '')
       txt01_1.innerHTML = "景色、景観派"
       txt01_2.innerHTML = "花でしょ"
       txt02_1.innerHTML = "花？食べられる？"
@@ -122,8 +154,12 @@ function move() {
       question.innerHTML = "あなたは都会派？田舎派？"
       answer_left.setAttribute('class', 'ans0401')
       answer_right.setAttribute('class', 'ans0402')
-      img01.innerHTML = "<img src ='assets/img_0401_city.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/img_0402_village.png', class='image'>";
+      // img01.innerHTML = "<img src ='assets/img_0401_city.png', class='image'>";
+      // img02.innerHTML = "<img src ='assets/img_0402_village.png', class='image'>";
+      img0101.setAttribute('style', 'display: none')
+      img0401.setAttribute('style', '')
+      img0102.setAttribute('style', 'display: none')
+      img0402.setAttribute('style', '')
       txt01_1.innerHTML = "利便性が第一！"
       txt01_2.innerHTML = "都会派"
       txt02_1.innerHTML = "たまには自然もいいよね"
@@ -134,8 +170,12 @@ function move() {
       question.innerHTML = "何かやるとき事前準備をバッチリする人？"
       answer_left.setAttribute('class', 'ans0601')
       answer_right.setAttribute('class', 'ans0602')
-      img01.innerHTML = "<img src ='assets/img_0601_sleep.png', class='image'>";
-      img02.innerHTML = "<img src ='assets/img_0602_hammock.png', class='image'>";
+      // img01.innerHTML = "<img src ='assets/img_0601_sleep.png', class='image'>";
+      // img02.innerHTML = "<img src ='assets/img_0602_hammock.png', class='image'>";
+      img0201.setAttribute('style', 'display: none')
+      img0601.setAttribute('style', '')
+      img0202.setAttribute('style', 'display: none')
+      img0602.setAttribute('style', '')
       txt01_1.innerHTML = "夜眠れないレベル"
       txt01_2.innerHTML = "準備命"
       txt02_1.innerHTML = "楽観的"
