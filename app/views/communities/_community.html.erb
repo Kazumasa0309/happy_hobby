@@ -1,20 +1,19 @@
 <li class='list'>
-<%# community_path(community.id) %>
-  <%= link_to "#" do %>
-    <div class='item-img-content'>
-      <%= image_tag community.image, class: "item-img" %>
+  <div class='community-content'>
+    <div class='community-img-content'>
+      <%= image_tag community.image, class: "community-img" %>
     </div>
-  <% end %>
-    <div class='item-info'>
-      <h3 class='item-name'>
-        コミュニティ名：<%= community.name %>
-      </h3>
-      <div class='community-category'>
-        <span>カテゴリー：<%= community.category %></span>
+    <div class='community-info'>
+      <div class="community-name">
+        <%= community.name %>
       </div>
+      <div class="community-profile">
+        <%= community.profile %>
+      </div>
+      <ul class='community-list'>
+          <li><%= link_to '入室', community_messages_path(community), class: "community-enter" %></li>
+          <li><%= link_to '詳細', community_path(community), class: "community-show" %></li>
+      </ul>
     </div>
-    <ul class='community-list'>
-        <li><%= link_to '入室', community_messages_path(community), class: "community-enter" %></li>
-        <li><%= link_to '詳細', community_path(community), class: "community-show" %></li>
-    </ul>
+  </div>
 </li>

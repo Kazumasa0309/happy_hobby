@@ -39,11 +39,6 @@
   margin-top: 5px;
 }
 
-.item-img-content {
-  position: relative;
-}
-
-.item-img {
-  width: 33vh;
-  height: 33vh;
+.title {
+  margin-bottom: 5px;
 }
