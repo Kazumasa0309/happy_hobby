@@ -1,18 +1,14 @@
 <div class='chat-room-form'>
-  <h1>新規チャットルーム</h1>
+  <h1>新規コミュニティ作成</h1>
   <%=form_with model: @community, local: true do |f|%>
 
     <%# コミュニティアイコン画像 %>
-    <div class="img-upload">
-      <div class="weight-bold-text">
-        出品画像
-        <span class="indispensable">必須</span>
+    <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+         <div class='chat-room-form__label'>出品画像</div>
       </div>
-      <div class="click-upload">
-        <p>
-          クリックしてファイルをアップロード
-        </p>
-        <%= f.file_field :image, id:"item-image" %>
+      <div class='chat-room-form__field--right'>
+        <%= f.file_field :image, class: 'chat__room_name chat-room-form__input' %>
       </div>
     </div>
 
