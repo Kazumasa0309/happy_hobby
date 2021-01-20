@@ -20,6 +20,12 @@ class CommunitiesController < ApplicationController
     @community = Community.find(params[:id])
   end
 
+  def destroy
+    @community = Community.find(params[:id])
+    @community.destroy
+    redirect_to root_path
+  end
+
   private
 
   def community_params

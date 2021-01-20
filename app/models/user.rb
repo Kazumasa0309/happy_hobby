@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   validates :nickname, presence: true
 
-  has_many :users_communities
+  has_many :users_communities, dependent: :destroy
   has_many :communities, through: :users_communities
-  has_many :messages
+  has_many :messages, dependent: :destroy
 end
