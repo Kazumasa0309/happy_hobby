@@ -1,19 +1,16 @@
 <%# コミュニティの概要 %>
 <div class="item-show">
-  <div class="item-box">
-    <h2 class="name">
-      <%= @community.name %>
-    </h2>
-    <div class='item-img-content'>
-      <%= image_tag @community.image ,class:"item-box-img" %>
+  <div class='community-content'>
+    <div class='community-img-content'>
+      <%= image_tag @community.image, class: "community-img" %>
     </div>
-
-    <div class="item-explain-box">
-      <span><%= @community.category %></span>
-    </div>
-
-    <div class="item-explain-box">
-      <span><%= @community.profile %></span>
+    <div class='community-info'>
+      <div class="community-name">
+        <%= @community.name %>
+      </div>
+      <div class="community-profile">
+        <%= @community.profile %>
+      </div>
     </div>
   </div>
   <div class="request-box">
