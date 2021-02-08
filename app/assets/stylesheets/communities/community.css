@@ -37,17 +37,21 @@
   bottom: 0;
 }
 
-.community-enter {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  background-color: black;
+#button-enter {
 }
 
-.community-show {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  background-color: black;
+#button-show {
   margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hobbybutton {
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: black;
+  border: solid 2px black;
+  border-radius: 3px;
+  transition: 0.4s;
 }

@@ -11,8 +11,8 @@
         <%= community.profile %>
       </div>
       <ul class='community-list'>
-          <li><%= link_to '入室', community_messages_path(community), class: "community-enter" %></li>
-          <li><%= link_to '詳細', community_path(community), class: "community-show" %></li>
+          <li><%= link_to '入室', community_messages_path(community), class: "hobbybutton", id: "button-enter" %></li>
+          <li><%= link_to '詳細', community_path(community), class: "hobbybutton", id: "button-show"%></li>
       </ul>
     </div>
   </div>
